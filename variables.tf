@@ -38,7 +38,7 @@ variable "alb_subnet_ids" {
 variable "domain_name" {
   type        = string
   description = "The target domain name for the ACM SSL certificate"
-  default     = "://wewebby.com"
+  default     = "aws.wewebby.com"
 }
 
 
