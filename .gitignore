@@ -1,0 +1,25 @@
+# Block backup directory and all its contents
+backup/
+
+# Block macOS folder visualization settings file
+.DS_Store
+
+# Block local Terraform data and plugin directories
+.terraform/
+
+# Block local state files (contain sensitive data and plain-text secrets)
+*.tfstate
+*.tfstate.*
+
+# Block ALL variable values files (including your local terraform.tfvars)
+*.tfvars
+*.tfvars.json
+
+# Block CLI configuration files
+.terraformrc
+terraform.rc
+
+# Block log and crash files
+crash.log
+crash.*.log
+*.log
