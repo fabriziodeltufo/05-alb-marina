@@ -76,7 +76,7 @@ resource "aws_lb_listener" "marina_http_listener" {
 }
 
 # ==============================================================================
-# 6. ACM CERTIFICATE (Certificate for ://wewebby.com)
+# 6. ACM CERTIFICATE (Certificate for aws.wewebby.com)
 #
 #    This is created during the FIRST terraform apply.
 #    After the ALB is created, add the ACM validation CNAME to Hostinger.
@@ -102,7 +102,7 @@ resource "aws_acm_certificate" "marina_ssl" {
 #
 #    The ALB must exist first so we can obtain its DNS name.
 #    Then:
-#      1. Add ://wewebby.com CNAME in Hostinger
+#      1. Add aws.wewebby.com CNAME in Hostinger
 #      2. Wait for ACM certificate validation
 #      3. Uncomment this block
 #      4. Run terraform apply again
